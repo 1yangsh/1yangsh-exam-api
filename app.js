@@ -6,7 +6,7 @@ app.get('/', (req, res) => res.send('This system is running.'))
 // http://127.0.0.1:3000/service?status=on
 app.get('/service', (req, res) => {
     var status = req.param('status')
-    res.send('This system is running [Status : ' + status + ']');
+    res.send('The system is running [Status : ' + status + ']');
 });
 
 
